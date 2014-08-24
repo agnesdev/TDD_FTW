@@ -1,0 +1,14 @@
+<h2><%= @saludo %></h2>
+<h1>Seleccionar Modo Juego</h1>
+
+
+<form action="/jugar" method="get">
+	<select id="modo_seleccionado">
+		<option value="FOREVER_ALONE">Forever Alone</option>
+	</select>
+	<input type="submit" value ="Jugar"> 
+
+	<input type="hidden" name="palabra" value ="<%= @palabra %>"> 
+
+</form>
+
